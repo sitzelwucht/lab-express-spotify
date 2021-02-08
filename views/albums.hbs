@@ -1,0 +1,16 @@
+<div class="container">
+
+        {{#each data}}
+            
+    <div class="databox">
+   
+        <div class="img"><img src="{{this.images.0.url}}" width="200" height="150"></div>
+        <div class="name">
+            {{this.name}}
+            
+            <a href="/tracks/{{this.id}}/"><button>View tracks</button></a>
+        </div>
+    </div>
+        {{/each}}
+
+</div>

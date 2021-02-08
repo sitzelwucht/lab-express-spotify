@@ -1,0 +1,24 @@
+<div class="container">
+
+        {{#each data}}
+            
+    <div class="databox">
+   
+        <div>
+            {{#if this.images.0.url}}
+            <img src="{{this.images.0.url}}">
+            {{else}}
+            <img src="https://placekitten.com/300/300">
+            {{/if}}
+        </div>
+
+        <div class="name">
+            {{this.name}}
+            
+            <a href="/albums/{{this.id}}/"><button>View Albums</button></a>
+        </div>
+    </div>
+        {{/each}}
+
+</div>
+
